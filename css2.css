@@ -534,3 +534,65 @@ header.white-text-container p::after {
     justify-content: center;
   }
 }
+/* ===============================
+   Contact Form Card (for Index Page)
+   =============================== */
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form .form-group {
+  margin-bottom: 18px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: 500;
+  color: #004c70;
+  margin-bottom: 6px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #2a7ae4;
+  box-shadow: 0 0 5px rgba(42, 122, 228, 0.3);
+}
+
+.contact-form button {
+  background-color: #2a7ae4;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #004c70;
+}
+
+/* For responsive spacing inside card */
+@media (max-width: 768px) {
+  .contact-form {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
